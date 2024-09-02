@@ -50,7 +50,7 @@ def index():
         if texto:
             # Gera o QR Code com logo fora do QR code
             buffer = gerar_qrcode_com_logo(texto)
-            return send_file(buffer, mimetype='image/png', as_attachment=True, download_name='qrcode.png')
+            return send_file(buffer, mimetype='image/png', as_attachment=True, download_name='pixverginia.png')
     return render_template('index.html')
 
 if __name__ == '__main__':
